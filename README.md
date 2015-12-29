@@ -6,6 +6,7 @@ B-Buttons is a stylesheet that is designed to make beautiful buttons easier. B-B
 
 ## Features
 * hover effects on the background
+* supports disabled buttons
 * 15 color schemes to choose from
 * 3 different button sizes
 * combined with **Roboto**
@@ -40,7 +41,7 @@ Now that we linked the stylesheet, let's start!
 3. Repeat Step 1 and 2 until necessary.
 4. Don't forget to put in the content and close all tags.
 
-There you have it. You now have a list that is more beautiful and more elegant. :)
+There you have it. You now have more beautiful and more elegant buttons. :)
 
 NOTE: If you have questions on the usage of B-Buttons, you can email me at 1nonlyxtian@gmail.com or message me on Twitter: [@1nOnlyXtian](https://twitter.com/1nonlyxtian).
 
