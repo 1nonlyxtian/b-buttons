@@ -1,0 +1,195 @@
+/*
+	B-Buttons v1.0.0 (https://github.com/1nonlyxtian/b-buttons)
+	Copyright 2015 Christian Dasalla
+	
+	This project is licensed under the 
+	MIT License (https://github.com/1nonlyxtian/b-buttons/blob/master/LICENSE).
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+/* Button Sizes */
+.btn-sm, .btn-md, .btn-lg {
+	background-color: transparent !important;
+	font-family: 'Roboto' !important;
+	text-decoration: none !important;
+	transition: background-color 0.25s !important;
+}
+.btn-sm {
+	line-height: 1 !important;
+	padding: 3.5px 10px !important;
+	border-radius: 3px !important;
+	font-size:16px !important;
+	border-width: 1px !important;
+	border-style: solid !important;
+}		
+.btn-md {
+	line-height: 2 !important;
+	padding: 7px 20px !important;
+	margin: 3px 5px !important;
+	border-radius: 5px !important;
+	font-size: 18px !important;
+	border-width: 2px !important;
+	border-style: solid !important;
+}		
+.btn-lg {
+	line-height: 2.5 !important;
+	padding: 10px 35px !important;
+	margin: 3px 5px !important;
+	border-radius: 7px !important;
+	font-size:20px !important;
+	border-width: 3px !important;
+	border-style: solid !important;
+}
+.btn-sm.disabled, .btn-md.disabled, .btn-lg.disabled {
+	filter: alpha(opacity=65);
+	opacity: 0.65;
+	pointer-events: none;
+}
+
+/* Colors */
+.btn-sm.black, .btn-md.black, .btn-lg.black {
+	border-color: #000 !important;
+	color:#000 !important;
+}
+.btn-sm.white, .btn-md.white, .btn-lg.white {
+	border-color: #fff !important;
+	color:#fff !important;
+}		
+.btn-sm.blue, .btn-md.blue, .btn-lg.blue {
+	border-color: #2196F3 !important;
+	color: #2196F3 !important;
+}
+.btn-sm.dark-purple, .btn-md.dark-purple, .btn-lg.dark-purple {
+	border-color: #673ab7 !important;
+	color: #673ab7 !important;
+}
+.btn-sm.grey, .btn-md.grey, .btn-lg.grey {
+	border-color: #616161 !important;
+	color: #616161 !important;
+}
+.btn-sm.indigo, .btn-md.indigo, .btn-lg.indigo {
+	border-color: #1a237e !important;
+	color: #1a237e !important;
+}
+.btn-sm.orange, .btn-md.orange, .btn-lg.orange {
+	border-color: #ff9800 !important;
+	color: #ff9800 !important;
+}
+.btn-sm.purple, .btn-md.purple, .btn-lg.purple {
+	border-color: #9c27b0 !important;
+	color: #9c27b0 !important;
+}
+.btn-sm.red, .btn-md.red, .btn-lg.red {
+	border-color: #F44336 !important;
+	color: #F44336 !important;
+}
+.btn-sm.teal, .btn-md.teal, .btn-lg.teal {
+	border-color: #009688 !important;
+	color: #009688 !important;
+}
+.btn-sm.yellow, .btn-md.yellow, .btn-lg.yellow {
+	border-color: #ffeb3b !important;
+	color: #ffeb3b !important;
+}
+.btn-sm.light-blue, .btn-md.light-blue, .btn-lg.light-blue {
+	border-color: #03a9f4 !important;
+	color: #03a9f4 !important;
+}
+.btn-sm.green, .btn-md.green, .btn-lg.green {
+	border-color: #4CAF50 !important;
+	color: #4CAF50 !important;
+}
+.btn-sm.light-green, .btn-md.light-green, .btn-lg.light-green {
+	border-color: #8bc34a !important;
+	color: #8bc34a !important;
+}
+.btn-sm.brown, .btn-md.brown, .btn-lg.brown {
+	border-color: #795548 !important;
+	color: #795548 !important;
+}
+.btn-sm.black:hover, .btn-md.black:hover, .btn-lg.black:hover, .btn-sm.blue:hover, .btn-md.blue:hover, .btn-lg.blue:hover, .btn-sm.dark-purple:hover, .btn-md.dark-purple:hover, .btn-lg.dark-purple:hover, .btn-sm.grey:hover, .btn-md.grey:hover, .btn-lg.grey:hover, .btn-sm.indigo:hover, .btn-md.indigo:hover, .btn-lg.indigo:hover , .btn-sm.orange:hover, .btn-md.orange:hover, .btn-lg.orange:hover, .btn-sm.purple:hover, .btn-md.purple:hover, .btn-lg.purple:hover, .btn-sm.red:hover, .btn-md.red:hover, .btn-lg.red:hover, .btn-sm.teal:hover, .btn-md.teal:hover, .btn-lg.teal:hover, .btn-sm.yellow:hover, .btn-md.yellow:hover, .btn-lg.yellow:hover, .btn-sm.light-blue:hover, .btn-md.light-blue:hover, .btn-lg.light-blue:hover, .btn-sm.green:hover, .btn-md.green:hover, .btn-lg.green:hover, .btn-sm.light-green:hover, .btn-md.light-green:hover, .btn-lg.light-green:hover, .btn-sm.brown:hover, .btn-md.brown:hover, .btn-lg.brown:hover, ..btn-sm.black.disabled, .btn-md.black.disabled, .btn-lg.black.disabled, .btn-sm.blue.disabled, .btn-md.blue.disabled, .btn-lg.blue.disabled, .btn-sm.dark-purple.disabled, .btn-md.dark-purple.disabled, .btn-lg.dark-purple.disabled, .btn-sm.grey.disabled, .btn-md.grey.disabled, .btn-lg.grey.disabled , .btn-sm.indigo.disabled, .btn-md.indigo.disabled, .btn-lg.indigo.disabled, .btn-sm.orange.disabled, .btn-md.orange.disabled, .btn-lg.orange.disabled, .btn-sm.purple.disabled, .btn-md.purple.disabled, .btn-lg.purple.disabled, .btn-sm.red.disabled, .btn-md.red.disabled, .btn-lg.red.disabled, .btn-sm.teal.disabled, .btn-md.teal.disabled, .btn-lg.teal.disabled, .btn-sm.yellow.disabled, .btn-md.yellow.disabled, .btn-lg.yellow.disabled, .btn-sm.light-blue.disabled, .btn-md.light-blue.disabled, .btn-lg.light-blue.disabled, .btn-sm.green.disabled, .btn-md.green.disabled, .btn-lg.green.disabled, .btn-sm.light-green.disabled, .btn-md.light-green.disabled, .btn-lg.light-green.disabled, .btn-sm.brown.disabled, .btn-md.brown.disabled, .btn-lg.brown.disabled {
+	color: #fff !important;
+}
+.btn-sm.black:hover, .btn-md.black:hover, .btn-lg.black:hover {
+	background-color: #000 !important;
+}
+.btn-sm.white:hover, .btn-md.white:hover, .btn-lg.white:hover {
+	background-color: #fff !important;
+	color:#000 !important;
+}		
+.btn-sm.blue:hover, .btn-md.blue:hover, .btn-lg.blue:hover {
+	background-color: #2196F3 !important;
+}
+.btn-sm.dark-purple:hover, .btn-md.dark-purple:hover, .btn-lg.dark-purple:hover {
+	background-color: #673ab7 !important;
+}
+.btn-sm.grey:hover, .btn-md.grey:hover, .btn-lg.grey:hover {
+	background-color: #616161 !important;
+}
+.btn-sm.indigo:hover, .btn-md.indigo:hover, .btn-lg.indigo:hover {
+	background-color: #1a237e !important;
+}
+.btn-sm.orange:hover, .btn-md.orange:hover, .btn-lg.orange:hover {
+	background-color: #ff9800 !important;
+}
+.btn-sm.purple:hover, .btn-md.purple:hover, .btn-lg.purple:hover {
+	background-color: #9c27b0 !important;
+}
+.btn-sm.red:hover, .btn-md.red:hover, .btn-lg.red:hover {
+	background-color: #F44336 !important;
+}
+.btn-sm.teal:hover, .btn-md.teal:hover, .btn-lg.teal:hover {
+	background-color: #009688 !important;
+}
+.btn-sm.yellow:hover, .btn-md.yellow:hover, .btn-lg.yellow:hover {
+	background-color: #ffeb3b !important;
+}
+.btn-sm.light-blue:hover, .btn-md.light-blue:hover, .btn-lg.light-blue:hover {
+	background-color: #03a9f4 !important;
+}
+.btn-sm.green:hover, .btn-md.green:hover, .btn-lg.green:hover {
+	background-color: #4CAF50 !important;
+}
+.btn-sm.light-green:hover, .btn-md.light-green:hover, .btn-lg.light-green:hover {
+	background-color: #8bc34a !important;
+}
+.btn-sm.brown:hover, .btn-md.brown:hover, .btn-lg.brown:hover {
+	background-color: #795548 !important;
+}
+.dark-purple:hover, .dark-purple.disabled {
+	background-color: #673ab7 !important;
+}
+.grey:hover, .grey.disabled {
+	background-color: #616161 !important;
+}
+.indigo:hover, .indigo.disabled {
+	background-color: #1a237e !important;
+}
+.orange:hover, .orange.disabled {
+	background-color: #ff9800 !important;
+}
+.purple:hover, .purple.disabled {
+	background-color: #9c27b0 !important;
+}
+.red:hover, .red.disabled {
+	background-color: #F44336 !important;
+}
+.teal:hover, .teal.disabled {
+	background-color: #009688 !important;
+}
+.yellow:hover, .yellow.disabled {
+	background-color: #ffeb3b !important;
+}
+.light-blue:hover, .light-blue.disabled {
+	background-color: #03a9f4 !important;
+}
+.green:hover, .green.disabled {
+	background-color: #4CAF50 !important;
+}
+.light-green:hover, .light-green.disabled {
+	background-color: #8bc34a !important;
+}
+.brown:hover, .brown.disabled {
+	background-color: #795548 !important;
+}
